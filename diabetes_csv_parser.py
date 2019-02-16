@@ -30,9 +30,16 @@ enumerate(diabeteslist[0])]
 print("Diplay first column ONLY")
 print(rotated_list[0]) #Just showing the first column rotated to row
 
-print('Homework DONE!!!')
-
-
+#This is the REACH
+print("End of rotated_list")
+diabetes_features = np.asarray(rotated_list) 	#Converting list to numpy arrays
+print(diabetes_features)
+print("The mean of each feature")
+mean_features = np.mean(diabetes_features, axis=1)	#Computes mean
+print(mean_features)
+print("The standard deviation of each feature")
+std_features = np.std(diabetes_features, axis=1)	#computes standard deviation
+print(std_features)
 
 
 
