@@ -10,7 +10,7 @@ myfilename = "diabetes.tab.txt"
 
 with open(myfilename, 'r') as file_handle:
 	diabeteslist = []
-	next(file_handle)
+	next(file_handle)	#Skips header row 
 	for line in file_handle.readlines():
 		line_clean = line.replace('   ', ' ').replace('  ', ' ')
 		line_clean = line_clean.strip()
