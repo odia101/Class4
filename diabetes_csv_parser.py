@@ -10,6 +10,7 @@ myfilename = "diabetes.tab.txt"
 
 with open(myfilename, 'r') as file_handle:
 	diabeteslist = []
+	next(file_handle)
 	for line in file_handle.readlines():
 		line_clean = line.replace('   ', ' ').replace('  ', ' ')
 		line_clean = line_clean.strip()
@@ -21,10 +22,12 @@ with open(myfilename, 'r') as file_handle:
 			else:
 				caster.append(int(value))
 		diabeteslist += [caster]
+print("Display first 2 rows ONLY")
 print(diabeteslist[0:2]) #Just printing the first 2 rows
 print("End of list!!!. Now Converting Columns to Rows")
 rotated_list = [[diabeteslist[jdx][idx]for jdx, row in enumerate(diabeteslist)]for idx, column in 
 enumerate(diabeteslist[0])]
+print("Diplay first column ONLY")
 print(rotated_list[0]) #Just showing the first column rotated to row
 
 print('Homework DONE!!!')
