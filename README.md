@@ -15,7 +15,15 @@ C. RUNNING
 
 
 CONTONOUS INTEGRATION (CI)
-	Ict.
+	This is a process or system by which developers keep track of their coding projects. It helps maintain a 
+single source repository, makes the build self-testing, and makes it easy for collaborators to see what is 
+happening, and get the latest executed change.
+ 
+	The process involves the developers checking out their codes in a private workspace. 
+CI server monitors changes commited to the repository, checks changes and alerts everyone of test failures and success.
+This helps the team fix problems at the earliest opportunity.
+
 	One common tool that can be used as a Continous Integration tool with Github is Jenkins. 
 	
  
+
